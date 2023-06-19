@@ -5,10 +5,25 @@
 body{
     background: #222;
 }
+#loginn{
+    border-radius: 20px;
+    color: white;
+    margin-left: 1200px;
+    margin-top: 10px;
+    padding: 5px 30px;
+    border: none;
+    background-color: #0e92a3;
+}
+#log{
+    text-decoration: none;
+color: white;
+font-size: 25px;
+font-weight: 800;
+}
 .page1{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba,#5b548a);
+    background: linear-gradient(135deg,rgb(45, 138, 201),rgb(45,138,201));
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
@@ -107,4 +122,73 @@ body{
     display: none;
     font-weight: 700;
 }
+
+
+/* darkmode styling */
+body.dark-mode {
+    background: #111;
+    color: #fff;
+}
+
+.page1.dark-mode {
+    background: linear-gradient(135deg, #555, #333);
+}
+
+.search input.dark-mode {
+    background: #333;
+    color: #fff;
+}
+
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.toggle-label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background:white;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    transition: transform 0.3s;
+}
+
+.toggle-label:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    background: #111;
+    transition: transform 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggle-label:before {
+    transform: translateX(20px);
+}
+
+input[type="checkbox"]:checked + .toggle-label:after {
+    transform: translateX(20px);
+}
+
 

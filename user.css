@@ -1,0 +1,68 @@
+
+/* User login ans signup  */
+.login-container {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+}
+
+.login-container form {
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.login-container button[type="submit"],
+.login-container .signup button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+.login-container .signup p {
+    margin-bottom: 10px;
+}
+
+.login-container .signup button {
+    background: transparent;
+    border: 1px solid #ebfffc;
+    color: #ebfffc;
+    font-weight: bold;
+}
+
+.login-container .signup button:hover {
+    background: #ebfffc;
+    color: #555;
+}
+#log{
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}

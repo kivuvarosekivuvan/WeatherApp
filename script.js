@@ -37,7 +37,7 @@ weatherIcon.src= "images/cloud.png"
 
     }
     else if(allData.weather[0].main == "Drizzle"){
-        weatherIcon.src= "images/rain2.png"
+        weatherIcon.src= "images/rain.png"
     }
     else if(allData.weather[0].main == "Mist"){
         weatherIcon.src= "images/mist.png"
@@ -56,3 +56,27 @@ searchButton.addEventListener("click", ()=>{
     confirmWeather(searchSpace.value);
 });
 
+// The darkmode js code
+
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+darkModeToggle.addEventListener('change', handleDarkModeToggle);
+
+// Function to handle the dark mode toggle
+function handleDarkModeToggle() {
+    const body = document.body;
+    const page = document.querySelector('.page1');
+    const searchInput = document.querySelector('.search input');
+    // Add more elements that need to be toggled for dark mode
+
+    if (darkModeToggle.checked) {
+        body.classList.add('dark-mode');
+        page.classList.add('dark-mode');
+        searchInput.classList.add('dark-mode');
+        // Add more elements that need to be toggled for dark mode
+    } else {
+        body.classList.remove('dark-mode');
+        page.classList.remove('dark-mode');
+        searchInput.classList.remove('dark-mode');
+        // Add more elements that need to be toggled for dark mode
+    }
+}
